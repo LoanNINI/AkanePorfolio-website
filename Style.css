@@ -4,16 +4,26 @@
     font-optical-sizing: auto;
     font-style: normal;
     color: rgb(219, 219, 219);
+    text-shadow: 0 0 2.5px #fff;
     /*_________________________________*/
     padding: 0;
     margin: 0;
+}
+
+
+.LogoTop{
+    transition: all 1s;
+}
+
+.LogoTop:hover {
+    rotate: 360deg;
 }
 
 .MainTaskBar
 {
     width: 100%;
     height: 80px;
-    background-color: rgb(24, 25, 25);
+    background-color: rgb(21, 22, 22);
 }
 .MainTaskBar label{
     width: 100;
@@ -109,12 +119,28 @@ section{
     min-height: 100vh;
 }
 
+.NEXT{
+    margin-left: 300px;
+    background-color: rgb(17, 17, 17);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(209, 209, 209);
+    font-size: 20px;
+    transition: all .5s;
+}
+.NEXT:hover{
+    border-radius: 25px;
+}
+
 .Hidden {
     opacity: 0;
-    margin-left: 50px;
-    transition: all 1s;
+    margin-top: 100px;
+    transition: all 2s;
 }
 .show {
     opacity: 1;
-    margin-left: 0px;
+    margin-top: 0px;
 }
