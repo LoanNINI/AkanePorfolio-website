@@ -1,10 +1,10 @@
 *{
     /*Font*/
-    font-family: "Playfair Display", serif;
+    font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
-    color: rgb(219, 219, 219);
-    text-shadow: 0 0 2.5px #fff;
+    color: rgb(255, 255, 255);
+    /*text-shadow: 0 0 2.5px #fff;
     /*_________________________________*/
     padding: 0;
     margin: 0;
@@ -23,7 +23,7 @@
 {
     width: 100%;
     height: 80px;
-    background-color: rgb(21, 22, 22);
+    background-color: rgb(23, 24, 24);
 }
 .MainTaskBar label{
     width: 100;
@@ -48,7 +48,6 @@
 }
 .MainTaskBar ul li a
 {
-    text-shadow: 0 0 2.5px #fff;
     color: rgb(219, 219, 219);
     font-size: 25px;
 }
@@ -122,18 +121,119 @@ section{
 .NEXT{
     margin-left: 300px;
     background-color: rgb(17, 17, 17);
+    color: rgb(170, 170, 170);
     width: 150px;
     height: 50px;
     border-radius: 10px;
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(209, 209, 209);
+    border-color: rgb(209, 209, 209, .3);
     font-size: 20px;
     transition: all .5s;
+    
 }
 .NEXT:hover{
     border-radius: 25px;
+    color: rgb(231, 231, 231);
 }
+
+
+
+
+
+
+.Skilltask{
+    display: grid;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 500px 500px;
+    height: 100%;
+    width: 100%;
+}
+.Skill-item{
+    grid-area: "Skill-item";
+    font-size: 30px;
+    text-align: center;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.Skill-Info{
+    grid-area: "Skill-Info";
+    background-color: rgb(19, 20, 20);
+    grid-row: 1/5;
+    grid-column: 3/5;
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    font-size: 30px;
+    text-align: center;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.Skill-Info_Roblox{
+    grid-area: "Skill-Info";
+    background-color: rgb(255, 255, 255);
+    grid-row: 1/5;
+    grid-column: 3/5;
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    font-size: 30px;
+    text-align: center;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.Hidden_INFO {
+    opacity: 0%;
+}
+
+
+.Buttom_1{
+    width: 130px;
+    height: 40px;
+    justify-content: center;
+    background-color: rgb(21, 22, 22);
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+.Buttom_1::before {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: -100%;
+    top: 0;
+    transition-duration: .3s;
+    mix-blend-mode: difference;
+  }
+  
+  .Buttom_1:hover::before {
+    transition-duration: .3s;
+    transform: translate(100%,-50%);
+    border-radius: 0;
+  }
+  
+  .Buttom_1:active {
+    transform: translate(5px,5px);
+    transition-duration: .3s;
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 .Hidden {
     opacity: 0;
